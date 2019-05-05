@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Device Ready Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/example.js"></script>
+    <link rel="stylesheet" href="themes/appTheme.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body onload="onLoad()">
+    <div data-role="content" data-theme="a">
+        <button onclick="window.location.href = '/index.html';">Index</button>
+    </div>
+
+
+    <div class="app">
+        <h1>Apache Cordova</h1>
+        <div id="deviceready" class="blink">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>
+        <button id="setLocalStorage">SET LOCAL STORAGE</button>
+        <br />
+        <button id="showLocalStorage">SHOW LOCAL STORAGE</button><br />
+        <button id="removeProjectFromLocalStorage">REMOVE PROJECT</button><br />
+        <button id="getLocalStorageByKey">GET BY KEY</button>
+        <p id="demo"></p>
+    </div>
+
+
+</body>
+</html>
